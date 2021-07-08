@@ -1,13 +1,13 @@
 	/*
 	* This function computes the averge number of words of a single string as presented by the Smartling translation tool for Coursera's Global Translator Community.
-	* If a normalization per page is desired, the result might be multiplied by the page number, wheres the maximum number is 100 strings per page.
+	* If a normalization by page is desired, the result may be multiplied by the page number, whereas the maximum number in Smartling is 100 strings per page.
 	* The reason why the function does not simply return the total word count of a page is because the average per string seems more suitable to further compute
-	* averages across multiple pages, videos and courses, as the pages may contain different numbers of strings.
+	* averages across multiple pages, videos and courses, as the pages themselves may contain different numbers of strings.
 	*/
 
 	function averageWordsPerStringAtSmartling() {
 
-		//get the string containing elements from the page by (hopefully uniform) class name
+		//get the string containing elements from the page by the (hopefully uniform) class name
 		var stringCollection = document.getElementsByClassName("segments__source___2Vmtne");
 
 		//total number of strings per page
@@ -28,7 +28,7 @@
 		//result variable for average words per string in a particular page
 		var averageWordsPerString = 0;
 
-		//loop through the string collection and count words using the above signs as separators
+		//iterate through the string collection and count words using the above signs as separators
 		for(var i = 0; i < stringNumber; ++i) {
 			
 			//initialize words per string counter with 1 since the first word is not captured by the separators but always there
