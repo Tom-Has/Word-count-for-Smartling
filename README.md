@@ -1,2 +1,3 @@
-# wordcountSmatrling
-Determination of average words per string in the Smartling translation tool
+# wordcountSmartling
+
+Determination of average words per string in the Smartling translation tool.
